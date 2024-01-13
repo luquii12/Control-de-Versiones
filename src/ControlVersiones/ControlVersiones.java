@@ -38,6 +38,16 @@ public class ControlVersiones {
 		int lado2 = in.nextInt();
 		double areaRect = calcularAreaRectangulo(lado1, lado2);
 		System.out.println("El área del rectángulo es: " + areaRect);
+		
+		//Cubo:
+		System.out.println("Introduce primer lado del cubo: ");
+		int lado1C = in.nextInt();
+		System.out.println("Introduce el segundo lado del cubo: ");
+		int lado2C = in.nextInt();
+		System.out.println("Introduce el tercer lado del cubo: ");
+		int lado3C = in.nextInt();
+		double areaCubo = calcularAreaCubo(lado1C, lado2C);
+		System.out.println("El área del cubo es: " + areaCubo);
 	}
 
 	public static double calcularAreaTriangulo(int base, int altura) {
@@ -58,4 +68,8 @@ public class ControlVersiones {
 	public static double calcularAreaRectangulo(int lado1, int lado2) {
 		return lado1 * lado2;
 	}
+	public static double calcularAreaCubo(int lado1, int lado2) {
+		return 6 * lado1 + lado2;
+	}
+
 }
