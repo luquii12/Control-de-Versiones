@@ -30,6 +30,14 @@ public class ControlVersiones {
 		int alturaCil = in.nextInt();
 		double areaCil = calcularAreaCilindro(radioCil, alturaCil);
 		System.out.println("El área del Cilindrro es: " + areaCil);
+		
+		// Rectángulo:
+		System.out.println("Introduce un lado del rectángulo: ");
+		int lado1 = in.nextInt();
+		System.out.println("Introduce el otro lado del rectángulo: ");
+		int lado2 = in.nextInt();
+		double areaRect = calcularAreaRectangulo(lado1, lado2);
+		System.out.println("El área del rectángulo es: " + areaRect);
 	}
 
 	public static double calcularAreaTriangulo(int base, int altura) {
@@ -46,5 +54,8 @@ public class ControlVersiones {
 
 	public static double calcularAreaCilindro(int radio, int altura) {
 		return 2 * Math.PI * radio * (altura + radio);
+	}
+	public static double calcularAreaRectangulo(int lado1, int lado2) {
+		return lado1 * lado2;
 	}
 }
